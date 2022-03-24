@@ -1,1 +1,13 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+.hero {
+  height: 100vh;
+  padding-top: 40vh;
+  overflow: hidden;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(37, 34, 34, 0)), to(rgba(37, 34, 34, 0.7))), url(/assets/img/background.jpg);
+  background: linear-gradient(rgba(37, 34, 34, 0), rgba(37, 34, 34, 0.7)), url(/assets/img/background.jpg);
+  background-size: cover;
+}
+/*# sourceMappingURL=main.css.map */
