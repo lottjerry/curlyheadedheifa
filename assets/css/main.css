@@ -1,3 +1,13 @@
+/* Imports */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Maps */
+/* functions */
 .hero {
   height: 100vh;
   padding-top: 40vh;
@@ -9,5 +19,26 @@
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(37, 34, 34, 0)), to(rgba(37, 34, 34, 0.7))), url(/assets/img/background.jpg);
   background: linear-gradient(rgba(37, 34, 34, 0), rgba(37, 34, 34, 0.7)), url(/assets/img/background.jpg);
   background-size: cover;
+  /* Nesting */
+}
+
+.hero h4 {
+  color: pink;
+  font-weight: 700;
+}
+
+.hero h1 {
+  color: white;
+}
+
+.hero .main {
+  color: white;
+  font-weight: 400;
+  width: 80%;
+  margin: 50px auto;
+}
+
+.hero .main:hover {
+  color: pink;
 }
 /*# sourceMappingURL=main.css.map */

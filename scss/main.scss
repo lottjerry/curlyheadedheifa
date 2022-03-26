@@ -1,3 +1,12 @@
+/* Imports */
+@import './resets';
+@import './variables';
+
+/* functions */
+@function weight($weight-name) {
+    @return map-get($font-weights, $weight-name)
+}
+
 .hero {
     height: 100vh;
     padding-top: 40vh;
@@ -6,4 +15,21 @@
     text-align: center;
     background:linear-gradient(rgba(37, 34, 34, 0), rgba(37, 34, 34, 0.7)), url(/assets/img/background.jpg);
     background-size: cover;
+    /* Nesting */
+    h4 {
+        color: $primary-color;
+        font-weight: weight(bold);
+    }
+    h1 {
+        color: $secondary-color;
+    }
+    .main {
+        color: $secondary-color;
+        font-weight: weight(regular);
+        width: 80%;
+        margin: 50px auto;
+        &:hover{
+            color: $primary-color;
+        }
+    }
 }
